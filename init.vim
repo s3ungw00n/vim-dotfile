@@ -13,6 +13,7 @@ autocmd! BufWritePost,BufEnter *.js Neomake
 call plug#begin('~/.config/nvim/plugged')
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' } " FuzzyFinder
 Plug 'neomake/neomake'
+Plug 'jelera/vim-javascript-syntax'
 call plug#end()
 
 " Fuzzy Search Ctrl+P shortcut
