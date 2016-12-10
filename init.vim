@@ -1,7 +1,7 @@
 set nu                    " Line number
-set tabstop=2							" Size of tab
+set tabstop=2             " Size of tab
 set expandtab             " convert all tab input to spaces
-retab											" convert existing tabs to spaces
+retab                     " convert existing tabs to spaces
 set shiftwidth=2          " the number of spaces inserted for indention
 set hlsearch              " Highlight searched keyword
 set incsearch             " Incremental search
