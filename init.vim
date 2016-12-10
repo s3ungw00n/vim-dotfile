@@ -7,8 +7,15 @@ set hlsearch              " Highlight searched keyword
 set incsearch             " Incremental search
 syntax on                 " Syntax highlightingcall 
 
+"NERDTree directory color
+hi Directory guifg=#FF0000 ctermfg=red
+
+"neomake 
 let g:neomake_javascript_enabled_makers = ['eslint']
 autocmd! BufWritePost,BufEnter *.js Neomake
+
+"airline
+let g:airline#extensions#tabline#enabled = 1
 
 call plug#begin('~/.config/nvim/plugged')
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' } " FuzzyFinder
@@ -26,5 +33,11 @@ Plug 'terryma/vim-multiple-cursors'
 Plug 'chrisbra/Colorizer', { 'on': 'ColorToggle' }
 call plug#end()
 
+"deoplete
+let g:deoplete#enable_at_startup = 1
+
 " Fuzzy Search Ctrl+P shortcut
 nnoremap <C-p> :FZF<CR>
+nnoremap <C-y> :ColorToggle<CR>
+nnoremap <C-u> :noh<CR>
+
