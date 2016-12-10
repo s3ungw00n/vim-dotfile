@@ -15,6 +15,15 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' } " FuzzyFinder
 Plug 'neomake/neomake'
 Plug 'jelera/vim-javascript-syntax'
 Plug 'scrooloose/nerdtree'
+Plug 'ryanoasis/vim-devicons'
+Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'airblade/vim-gitgutter'
+Plug 'edkolev/tmuxline.vim'
+Plug 'terryma/vim-multiple-cursors'
+Plug 'chrisbra/Colorizer', { 'on': 'ColorToggle' }
 call plug#end()
 
 " Fuzzy Search Ctrl+P shortcut
