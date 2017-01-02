@@ -46,6 +46,11 @@ nnoremap <C-p> :FZF<CR>
 nnoremap <C-y> :ColorToggle<CR>
 nnoremap <C-u> :noh<CR>
 
+" Devicons
+set encoding=utf8
+set guifont=Droid\ Sans\ Mono\ for\ Powerline\ Plus\ Nerd\ File\ Types:h11
+let g:airline_powerline_fonts = 1
+
 " Vimwiki remap
 nnoremap <Leader>tt :VimwikiToggleListItem<CR>
 
