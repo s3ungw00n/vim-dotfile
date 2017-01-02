@@ -24,3 +24,15 @@ md ~\vimfiles\autoload
 $uri = 'https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 (New-Object Net.WebClient).DownloadFile($uri, $ExecutionContext.SessionState.Path.GetUnresolvedProviderPathFromPSPath("~\vimfiles\autoload\plug.vim"))
 ```
+
+### Mac Input source switch setting
+
+```sh
+git clone https://github.com/vovkasm/input-source-switcher.git
+cd input-source-switcher
+mkdir build
+cd build
+cmake ..
+make
+make install
+```

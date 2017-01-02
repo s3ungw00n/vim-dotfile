@@ -54,3 +54,7 @@ let g:airline_powerline_fonts = 1
 " Vimwiki remap
 nnoremap <Leader>tt :VimwikiToggleListItem<CR>
 
+" Input Switcher
+if has('mac') && filereadable('/usr/local/lib/libInputSourceSwitcher.dylib')
+  autocmd InsertLeave * call libcall('/usr/local/lib/libInputSourceSwitcher.dylib', 'Xkb_Switch_setXkbLayout', 'com.apple.keylayout.ABC')
+endif
