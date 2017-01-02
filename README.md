@@ -25,7 +25,7 @@ $uri = 'https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 (New-Object Net.WebClient).DownloadFile($uri, $ExecutionContext.SessionState.Path.GetUnresolvedProviderPathFromPSPath("~\vimfiles\autoload\plug.vim"))
 ```
 
-### Mac Input source switch setting
+### Mac Input source switch setting (Thanks to [this blog post](http://yisangwook.tumblr.com/post/106780445189/vim-insert-mode-keyboard-switch)
 
 ```sh
 git clone https://github.com/vovkasm/input-source-switcher.git
