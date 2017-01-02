@@ -7,6 +7,10 @@ set hlsearch              " Highlight searched keyword
 set incsearch             " Incremental search
 syntax on                 " Syntax highlightingcall 
 
+"For vimwiki
+set nocompatible
+filetype plugin on
+
 "NERDTree directory color
 hi Directory guifg=#FF0000 ctermfg=red
 
@@ -31,6 +35,7 @@ Plug 'airblade/vim-gitgutter'
 Plug 'edkolev/tmuxline.vim'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'chrisbra/Colorizer', { 'on': 'ColorToggle' }
+Plug 'vimwiki/vimwiki'
 call plug#end()
 
 "deoplete
@@ -40,4 +45,7 @@ let g:deoplete#enable_at_startup = 1
 nnoremap <C-p> :FZF<CR>
 nnoremap <C-y> :ColorToggle<CR>
 nnoremap <C-u> :noh<CR>
+
+" Vimwiki remap
+nnoremap <Leader>tt :VimwikiToggleListItem<CR>
 
