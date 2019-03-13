@@ -1,10 +1,10 @@
 ### Install Neovim
+```sh
+brew install neovim
+```
 [Go to Instruction](https://github.com/neovim/neovim/wiki/Installing-Neovim)
 
-### Vim-plug Installation ( https://github.com/junegunn/vim-plug )
-
-[Download plug.vim](https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim)
-and put it in the "autoload" directory.
+### Vim-plug Installation
 ```sh
 curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs \
            https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
