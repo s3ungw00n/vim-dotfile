@@ -30,9 +30,9 @@ curl -fLo ~/.config/nvim/init.vim --create-dirs \
 
 ### alias v, vi, vim
 ```sh
-alias v="nvim"
-alias vi="nvim"
-alias vim="nvim"
+alias v="nvim" > ~/.zshrc
+alias vi="nvim" > ~/.zshrc
+alias vim="nvim" > ~/.zshrc
 ```
 
 ### Install Plugins
