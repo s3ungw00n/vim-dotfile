@@ -28,11 +28,9 @@ curl -fLo ~/.config/nvim/init.vim --create-dirs \
      https://raw.githubusercontent.com/mazicky/vim-dotfile/master/init.vim
 ```
 
-### alias v, vi, vim
+### alias v to vim
 ```sh
-alias v="nvim" > ~/.zshrc
-alias vi="nvim" > ~/.zshrc
-alias vim="nvim" > ~/.zshrc
+echo -e "alias v=\"nvim\"\n" >> ~/.zshrc
 ```
 
 ### Install Plugins
