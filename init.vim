@@ -8,6 +8,7 @@ syntax on
 call plug#begin('~/AppData/Local/nvim/plugged')
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'junegunn/fzf'
+Plug 'junegunn/fzf.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'zchee/deoplete-jedi'
 Plug 'vim-airline/vim-airline'
