@@ -43,14 +43,6 @@ echo -e "alias v=\"nvim\"\n" >> ~/.zshrc
 
 Set color preset of your terminal to proper one with NeoSolarized
 
-### Mac Input source switch setting (Thanks to [this blog post](http://yisangwook.tumblr.com/post/106780445189/vim-insert-mode-keyboard-switch))
+### 한글입력하다가 ESC 누르면 영문으로 변환
 
-```sh
-git clone https://github.com/vovkasm/input-source-switcher.git
-cd input-source-switcher
-mkdir build
-cd build
-cmake ..
-make
-make install
-```
+http://gureum.io/
