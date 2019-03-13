@@ -15,6 +15,10 @@ curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs \
 brew install fzf
 /usr/local/opt/fzf/install
 brew install the_silver_searcher
+
+(and python packages)
+pip install neovim
+pip install pynvim --upgrade
 ```
 
 ### Dotfile installation
