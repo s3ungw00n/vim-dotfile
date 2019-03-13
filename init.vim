@@ -14,6 +14,7 @@ Plug 'zchee/deoplete-jedi'
 Plug 'vim-airline/vim-airline'
 Plug 'iCyMind/NeoSolarized'
 Plug 'airblade/vim-gitgutter'
+Plug 'numirias/semshi', {'do': ':UpdateRemotePlugins'}
 call plug#end()
 
 let g:deoplete#enable_at_startup = 1
