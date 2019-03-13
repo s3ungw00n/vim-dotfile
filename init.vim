@@ -15,6 +15,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'iCyMind/NeoSolarized'
 Plug 'airblade/vim-gitgutter'
 Plug 'numirias/semshi', {'do': ':UpdateRemotePlugins'}
+Plug 'posva/vim-vue'
 call plug#end()
 
 let g:deoplete#enable_at_startup = 1
@@ -26,3 +27,4 @@ set background=dark
 " Shortcuts
 map <C-n> :NERDTreeToggle<CR>
 map <C-p> :FZF<CR>
+map <C-l> :Ag<CR>
