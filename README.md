@@ -21,7 +21,7 @@ brew install the_silver_searcher
 
 ```sh
 curl -fLo ~/.config/nvim/init.vim --create-dirs \
-     https://raw.githubusercontent.com/mazicky/vim-dotfile/init.vim
+     https://raw.githubusercontent.com/mazicky/vim-dotfile/master/init.vim
 ```
 
 ### alias v, vi, vim
