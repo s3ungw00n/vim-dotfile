@@ -5,42 +5,39 @@
 
 [Download plug.vim](https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim)
 and put it in the "autoload" directory.
-
-###### Unix
-
-```sh
-curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
-    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-```
-
-###### Neovim
-
 ```sh
 curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs \
-    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+           https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 ```
 
-###### Windows (PowerShell)
-
-```powershell
-md ~\vimfiles\autoload
-$uri = 'https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
-(New-Object Net.WebClient).DownloadFile($uri, $ExecutionContext.SessionState.Path.GetUnresolvedProviderPathFromPSPath("~\vimfiles\autoload\plug.vim"))
+### Install OS Packages
+```sh
+brew install fzf
+/usr/local/opt/fzf/install
+brew install the_silver_searcher
 ```
 
-### Copy init.vm
+### Dotfile installation
 
 ```sh
-cp init.vim ~/.config/nvim/
+curl -fLo ~/.config/nvim/init.vim --create-dirs \
+     https://raw.githubusercontent.com/mazicky/vim-dotfile/init.vim
+```
+
+### alias v, vi, vim
+```sh
+alias v="nvim"
+alias vi="nvim"
+alias vim="nvim"
 ```
 
 ### Install Plugins
 ```sh
-nvim
-
 (in neovim)
 :PlugInstall
 ```
+
+### Set Color Preset of Iterm2
 
 Set color preset of your terminal to proper one with NeoSolarized
 
