@@ -1,5 +1,6 @@
 ### Install Neovim
 ```sh
+git config --global core.quotepath false
 brew install neovim
 ```
 [Go to Instruction](https://github.com/neovim/neovim/wiki/Installing-Neovim)
