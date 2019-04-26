@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/[USER_NAME]/.oh-my-zsh"
+export ZSH="/Users/[USER]/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -99,12 +99,14 @@ source $ZSH/oh-my-zsh.sh
 export JAVA_HOME="$(/usr/libexec/java_home -v 1.8)"
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
-export NVP="/Users/[USER_NAME]/.config/nvim/init.vim"
-export VP="/Users/[USER_NAME]/.vimrc"
-export ZP="/Users/[USER_NAME]/.zshrc"
+export NVP="/Users/[USER]/.config/nvim/init.vim"
+export VP="/Users/[USER]/.vimrc"
+export ZP="/Users/[USER]/.zshrc"
 export GEM_HOME=$HOME/gems
 export PATH=/usr/local/opt/ruby/bin:$PATH
 export PATH=$HOME/gems/bin:$PATH
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
 
 # pyenv
 if command -v pyenv 1>/dev/null 2>&1; then
@@ -116,9 +118,9 @@ source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 prompt_context() {}
 
 # alias
-alias v="mvim -v"
-alias vim="mvim -v"
-alias vv="v $VP"
+alias v="nvim"
+alias vim="nvim"
+alias vv="v $NVP"
 alias vz="v $ZP"
 alias sz="source $ZP"
 alias k8="sudo lsof -t -i tcp:8000 | xargs kill -9"
@@ -128,9 +130,6 @@ alias k8="sudo lsof -t -i tcp:8000 | xargs kill -9"
 export TERM=xterm-256color
 alias tmux="tmux -2"
 
-# project
-alias ca="cd /Users/[USER_NAME]/Projects/[PROJECT_NAME]"
-
-# aws
-export AWS_DEFAULT_PROFILE=[AWS_PROFILE_NAME]
-
+export GEM_HOME=$HOME/gems
+export PATH=$HOME/gems/bin:$PATH
+eval "$(rbenv init -)"
