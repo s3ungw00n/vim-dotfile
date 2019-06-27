@@ -14,9 +14,11 @@ brew install neovim
 
 
 ### Vim-plug Installation
+```sh
+curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+```
 [Install Vim-Plug](https://github.com/junegunn/vim-plug#installation)
-
-
 ### Install OS Packages
 ```sh
 brew install fzf
