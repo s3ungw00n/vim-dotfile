@@ -28,9 +28,15 @@ pip install pynvim --upgrade
 ```
 
 ### Dotfile installation
+#### vim config
 ```sh
 curl -fLo ~/.config/nvim/init.vim --create-dirs \
      https://raw.githubusercontent.com/mazicky/vim-dotfile/master/init.vim
+```
+#### zshrc
+```sh
+curl -fLo ~/.zshrc --create-dirs \
+     https://raw.githubusercontent.com/mazicky/vim-dotfile/master/.zshrc
 ```
 
 ### Install Plugins
