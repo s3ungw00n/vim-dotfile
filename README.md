@@ -48,33 +48,6 @@ curl -fLo ~/.config/nvim/init.vim --create-dirs \
 :PlugInstall
 ```
 
-### Set Color Preset of Iterm2
+### 한글입력 시 원화 대신 ` 입력 및 ESC 누르면 영문으로 변환
 
-Set color preset of your terminal to proper one with NeoSolarized
-
-### 한글입력하다가 ESC 누르면 영문으로 변환
-
-[Download HammerSpoon](https://github.com/Hammerspoon/hammerspoon)
-
-```
-function reload()
-    hs.reload()
-    hs.notify.new({title="해머스푼", informativeText="리로드 완료"}):send()
-end
-hs.hotkey.bind({'cmd', 'shift', 'ctrl'}, 'R', reload)
-
-function goToNormalModeAtOnceOnHangle()
-    local inputEnglish = "com.apple.keylayout.ABC"
-    local input_source = hs.keycodes.currentSourceID()
-
-    if not (input_source == inputEnglish) then
-        hs.eventtap.keyStroke({}, 'right')
-        hs.keycodes.currentSourceID(inputEnglish)
-    end
-
-    hs.eventtap.keyStroke({'control'}, 'c')
-end
-
-hs.hotkey.bind({}, 'escape', goToNormalModeAtOnceOnHangle)
-```
-
+구름입력기 옵션을 이용 - http://gureum.io/
