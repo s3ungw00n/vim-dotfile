@@ -1,11 +1,7 @@
-### Iterm2
+### Iterm2 Setup
 https://medium.com/@Clovis_app/configuration-of-a-beautiful-efficient-terminal-and-prompt-on-osx-in-7-minutes-827c29391961
 
-### Install vim
-#### MacVim
-[MacVim Homepage](https://macvim-dev.github.io/macvim/)
-
-#### NeoVim
+### Install neovim
 ```sh
 git config --global core.quotepath false
 brew install neovim
@@ -19,6 +15,7 @@ curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 ```
 [Install Vim-Plug](https://github.com/junegunn/vim-plug#installation)
+
 ### Install OS Packages
 ```sh
 brew install fzf
@@ -31,14 +28,6 @@ pip install pynvim --upgrade
 ```
 
 ### Dotfile installation
-
-#### MacVim
-```sh
-curl -fLo ~/.vimrc --create-dirs \
-     https://raw.githubusercontent.com/mazicky/vim-dotfile/master/.vimrc
-```
-
-#### Neovim
 ```sh
 curl -fLo ~/.config/nvim/init.vim --create-dirs \
      https://raw.githubusercontent.com/mazicky/vim-dotfile/master/init.vim
