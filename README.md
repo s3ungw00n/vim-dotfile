@@ -23,6 +23,9 @@ brew install fzf
 brew install the_silver_searcher
 
 (and python packages)
+brew install pyenv
+pyenv install 3.7.3
+pyenv global 3.7.3
 pip install neovim
 pip install pynvim --upgrade
 ```
