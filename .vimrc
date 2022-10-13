@@ -24,25 +24,24 @@ set nowrap " Enable line wrapping.
 set nocompatible
 
 call plug#begin('~/.vim/plugged')
-Plug 'junegunn/fzf'
-Plug 'junegunn/fzf.vim'
-Plug 'davidhalter/jedi-vim'
-Plug 'scrooloose/nerdtree'
-Plug 'vim-airline/vim-airline'
-Plug 'airblade/vim-gitgutter'
-Plug 'numirias/semshi', {'do': ':UpdateRemotePlugins'}
-Plug 'billyvg/tigris.nvim', { 'do': './install.sh' }
-Plug 'nathanaelkane/vim-indent-guides'
-Plug 'scrooloose/syntastic'
-Plug 'editorconfig/editorconfig-vim'
-Plug 'tpope/vim-fugitive'
-Plug 'alvan/vim-closetag'
-Plug 'mhartington/oceanic-next'
-" Plug 'posva/vim-vue'
-Plug 'vimwiki/vimwiki', { 'branch': 'dev' }
 Plug 'mhinz/vim-startify'
-Plug 'tpope/vim-markdown'
-Plug 'vim-scripts/SyntaxRange'
+Plug 'vimwiki/vimwiki'
+Plug 'scrooloose/nerdtree'
+Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'ryanoasis/vim-devicons'
+Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'mg979/vim-visual-multi', {'branch': 'master'}
+Plug 'tpope/vim-surround'
+Plug 'APZelos/blamer.nvim'
+Plug 'rhysd/git-messenger.vim'
+Plug 'leafOfTree/vim-svelte-plugin'
+Plug 'vim-test/vim-test'
+Plug 'prettier/vim-prettier', { 'do': 'yarn install --frozen-lockfile --production' }
+Plug 'vim-python/python-syntax'  " Python f-string value syntax highlighting
+Plug 'numirias/semshi', { 'do': ':UpdateRemotePlugins' }. " More python syntax highlighting
 call plug#end()
 
 let g:deoplete#enable_at_startup = 1
