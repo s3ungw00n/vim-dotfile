@@ -28,6 +28,8 @@ pyenv install 3.7.3
 pyenv global 3.7.3
 pip install neovim
 pip install pynvim --upgrade
+pip install django-stubs (django keyword)
+pip install flake8 (pep8 warning)
 ```
 
 ### Dotfile installation
